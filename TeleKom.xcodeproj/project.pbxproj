@@ -21,8 +21,6 @@
 		FF3B189B291D65E2004F42C5 /* HexToUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3B189A291D65E2004F42C5 /* HexToUIColor.swift */; };
 		FF70D70A291CE6950085119A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D709291CE6950085119A /* AppDelegate.swift */; };
 		FF70D70C291CE6950085119A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D70B291CE6950085119A /* SceneDelegate.swift */; };
-		FF70D70E291CE6950085119A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D70D291CE6950085119A /* ViewController.swift */; };
-		FF70D711291CE6950085119A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF70D70F291CE6950085119A /* Main.storyboard */; };
 		FF70D713291CE6990085119A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF70D712291CE6990085119A /* Assets.xcassets */; };
 		FF70D716291CE6990085119A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF70D714291CE6990085119A /* LaunchScreen.storyboard */; };
 		FF70D721291CE6990085119A /* TeleKomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D720291CE6990085119A /* TeleKomTests.swift */; };
@@ -75,8 +73,6 @@
 		FF70D706291CE6950085119A /* TeleKom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeleKom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF70D709291CE6950085119A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF70D70B291CE6950085119A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FF70D70D291CE6950085119A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FF70D710291CE6950085119A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF70D712291CE6990085119A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF70D715291CE6990085119A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF70D717291CE6990085119A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -181,8 +177,6 @@
 				FF70D74D291D04EC0085119A /* Presentation */,
 				FF70D73F291CEB730085119A /* Model */,
 				FF70D739291CE6C70085119A /* Services */,
-				FF70D70D291CE6950085119A /* ViewController.swift */,
-				FF70D70F291CE6950085119A /* Main.storyboard */,
 				FF70D712291CE6990085119A /* Assets.xcassets */,
 				FF70D714291CE6990085119A /* LaunchScreen.storyboard */,
 				FF70D717291CE6990085119A /* Info.plist */,
@@ -441,7 +435,6 @@
 			files = (
 				FF70D716291CE6990085119A /* LaunchScreen.storyboard in Resources */,
 				FF70D713291CE6990085119A /* Assets.xcassets in Resources */,
-				FF70D711291CE6950085119A /* Main.storyboard in Resources */,
 				FF3B188B291D2788004F42C5 /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,7 +460,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF70D70E291CE6950085119A /* ViewController.swift in Sources */,
 				FF3B188F291D3A88004F42C5 /* DetailView.swift in Sources */,
 				FF3B189B291D65E2004F42C5 /* HexToUIColor.swift in Sources */,
 				FF3B1897291D5B2F004F42C5 /* TabBarViewController.swift in Sources */,
@@ -529,14 +521,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FF70D70F291CE6950085119A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FF70D710291CE6950085119A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FF70D714291CE6990085119A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -674,7 +658,7 @@
 				INFOPLIST_FILE = TeleKom/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -686,7 +670,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -702,7 +686,7 @@
 				INFOPLIST_FILE = TeleKom/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -714,7 +698,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
