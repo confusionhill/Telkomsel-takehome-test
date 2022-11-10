@@ -1,0 +1,839 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF3B1881291D2290004F42C5 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3B1880291D2290004F42C5 /* Coordinator.swift */; };
+		FF3B1883291D2544004F42C5 /* SwiftUITBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3B1882291D2544004F42C5 /* SwiftUITBVC.swift */; };
+		FF3B1886291D25C8004F42C5 /* HomeTBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3B1885291D25C8004F42C5 /* HomeTBVC.swift */; };
+		FF3B188A291D2788004F42C5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3B1888291D2788004F42C5 /* DetailViewController.swift */; };
+		FF3B188B291D2788004F42C5 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF3B1889291D2788004F42C5 /* DetailViewController.xib */; };
+		FF3B188F291D3A88004F42C5 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3B188E291D3A88004F42C5 /* DetailView.swift */; };
+		FF3B1891291D55AC004F42C5 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3B1890291D55AC004F42C5 /* FavouriteViewController.swift */; };
+		FF3B1893291D55DF004F42C5 /* FavouriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3B1892291D55DF004F42C5 /* FavouriteViewModel.swift */; };
+		FF3B1895291D5774004F42C5 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3B1894291D5774004F42C5 /* DetailViewModel.swift */; };
+		FF3B1897291D5B2F004F42C5 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3B1896291D5B2F004F42C5 /* TabBarViewController.swift */; };
+		FF3B1899291D5B38004F42C5 /* TabBarConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3B1898291D5B38004F42C5 /* TabBarConstant.swift */; };
+		FF3B189B291D65E2004F42C5 /* HexToUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3B189A291D65E2004F42C5 /* HexToUIColor.swift */; };
+		FF70D70A291CE6950085119A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D709291CE6950085119A /* AppDelegate.swift */; };
+		FF70D70C291CE6950085119A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D70B291CE6950085119A /* SceneDelegate.swift */; };
+		FF70D70E291CE6950085119A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D70D291CE6950085119A /* ViewController.swift */; };
+		FF70D711291CE6950085119A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF70D70F291CE6950085119A /* Main.storyboard */; };
+		FF70D713291CE6990085119A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF70D712291CE6990085119A /* Assets.xcassets */; };
+		FF70D716291CE6990085119A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF70D714291CE6990085119A /* LaunchScreen.storyboard */; };
+		FF70D721291CE6990085119A /* TeleKomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D720291CE6990085119A /* TeleKomTests.swift */; };
+		FF70D72B291CE6990085119A /* TeleKomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D72A291CE6990085119A /* TeleKomUITests.swift */; };
+		FF70D72D291CE6990085119A /* TeleKomUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D72C291CE6990085119A /* TeleKomUITestsLaunchTests.swift */; };
+		FF70D73C291CE6D70085119A /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D73B291CE6D70085119A /* DatabaseManager.swift */; };
+		FF70D73E291CE9F30085119A /* FavouriteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D73D291CE9F30085119A /* FavouriteService.swift */; };
+		FF70D741291CEB7F0085119A /* WrapperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D740291CEB7F0085119A /* WrapperModel.swift */; };
+		FF70D743291CEBA40085119A /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D742291CEBA40085119A /* ProductModel.swift */; };
+		FF70D746291CF3E40085119A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D745291CF3E40085119A /* NetworkManager.swift */; };
+		FF70D748291CF3EF0085119A /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D747291CF3EF0085119A /* NetworkConstant.swift */; };
+		FF70D74B291CF8F80085119A /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D74A291CF8F80085119A /* ProductService.swift */; };
+		FF70D750291D05000085119A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D74F291D05000085119A /* HomeViewController.swift */; };
+		FF70D754291D055B0085119A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D753291D055B0085119A /* HomeViewModel.swift */; };
+		FF70D757291D059B0085119A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D756291D059B0085119A /* ViewModel.swift */; };
+		FF70D75C291D09B90085119A /* ProductServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D75B291D09B90085119A /* ProductServiceMock.swift */; };
+		FF70D75E291D0A350085119A /* NetworkServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D75D291D0A350085119A /* NetworkServiceMock.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF70D71D291CE6990085119A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF70D6FE291CE6950085119A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF70D705291CE6950085119A;
+			remoteInfo = TeleKom;
+		};
+		FF70D727291CE6990085119A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF70D6FE291CE6950085119A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF70D705291CE6950085119A;
+			remoteInfo = TeleKom;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF3B1880291D2290004F42C5 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		FF3B1882291D2544004F42C5 /* SwiftUITBVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITBVC.swift; sourceTree = "<group>"; };
+		FF3B1885291D25C8004F42C5 /* HomeTBVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTBVC.swift; sourceTree = "<group>"; };
+		FF3B1888291D2788004F42C5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FF3B1889291D2788004F42C5 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		FF3B188E291D3A88004F42C5 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		FF3B1890291D55AC004F42C5 /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
+		FF3B1892291D55DF004F42C5 /* FavouriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewModel.swift; sourceTree = "<group>"; };
+		FF3B1894291D5774004F42C5 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		FF3B1896291D5B2F004F42C5 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		FF3B1898291D5B38004F42C5 /* TabBarConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarConstant.swift; sourceTree = "<group>"; };
+		FF3B189A291D65E2004F42C5 /* HexToUIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexToUIColor.swift; sourceTree = "<group>"; };
+		FF70D706291CE6950085119A /* TeleKom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeleKom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF70D709291CE6950085119A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF70D70B291CE6950085119A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FF70D70D291CE6950085119A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF70D710291CE6950085119A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF70D712291CE6990085119A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF70D715291CE6990085119A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF70D717291CE6990085119A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF70D71C291CE6990085119A /* TeleKomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeleKomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF70D720291CE6990085119A /* TeleKomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleKomTests.swift; sourceTree = "<group>"; };
+		FF70D726291CE6990085119A /* TeleKomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeleKomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF70D72A291CE6990085119A /* TeleKomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleKomUITests.swift; sourceTree = "<group>"; };
+		FF70D72C291CE6990085119A /* TeleKomUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleKomUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FF70D73B291CE6D70085119A /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		FF70D73D291CE9F30085119A /* FavouriteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteService.swift; sourceTree = "<group>"; };
+		FF70D740291CEB7F0085119A /* WrapperModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapperModel.swift; sourceTree = "<group>"; };
+		FF70D742291CEBA40085119A /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		FF70D745291CF3E40085119A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FF70D747291CF3EF0085119A /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
+		FF70D74A291CF8F80085119A /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		FF70D74F291D05000085119A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FF70D753291D055B0085119A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		FF70D756291D059B0085119A /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		FF70D75B291D09B90085119A /* ProductServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductServiceMock.swift; sourceTree = "<group>"; };
+		FF70D75D291D0A350085119A /* NetworkServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceMock.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF70D703291CE6950085119A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF70D719291CE6990085119A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF70D723291CE6990085119A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF3B187F291D2282004F42C5 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				FF70D709291CE6950085119A /* AppDelegate.swift */,
+				FF70D70B291CE6950085119A /* SceneDelegate.swift */,
+				FF3B1880291D2290004F42C5 /* Coordinator.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		FF3B1884291D25B8004F42C5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FF3B1885291D25C8004F42C5 /* HomeTBVC.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FF3B1887291D2762004F42C5 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				FF3B1888291D2788004F42C5 /* DetailViewController.swift */,
+				FF3B1889291D2788004F42C5 /* DetailViewController.xib */,
+				FF3B188E291D3A88004F42C5 /* DetailView.swift */,
+				FF3B1894291D5774004F42C5 /* DetailViewModel.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		FF70D6FD291CE6950085119A = {
+			isa = PBXGroup;
+			children = (
+				FF70D708291CE6950085119A /* TeleKom */,
+				FF70D71F291CE6990085119A /* TeleKomTests */,
+				FF70D729291CE6990085119A /* TeleKomUITests */,
+				FF70D707291CE6950085119A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF70D707291CE6950085119A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF70D706291CE6950085119A /* TeleKom.app */,
+				FF70D71C291CE6990085119A /* TeleKomTests.xctest */,
+				FF70D726291CE6990085119A /* TeleKomUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF70D708291CE6950085119A /* TeleKom */ = {
+			isa = PBXGroup;
+			children = (
+				FF3B187F291D2282004F42C5 /* Root */,
+				FF70D755291D05910085119A /* Extention */,
+				FF70D74D291D04EC0085119A /* Presentation */,
+				FF70D73F291CEB730085119A /* Model */,
+				FF70D739291CE6C70085119A /* Services */,
+				FF70D70D291CE6950085119A /* ViewController.swift */,
+				FF70D70F291CE6950085119A /* Main.storyboard */,
+				FF70D712291CE6990085119A /* Assets.xcassets */,
+				FF70D714291CE6990085119A /* LaunchScreen.storyboard */,
+				FF70D717291CE6990085119A /* Info.plist */,
+			);
+			path = TeleKom;
+			sourceTree = "<group>";
+		};
+		FF70D71F291CE6990085119A /* TeleKomTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF70D75A291D09940085119A /* Mocks */,
+				FF70D758291D09880085119A /* Presentation */,
+				FF70D720291CE6990085119A /* TeleKomTests.swift */,
+			);
+			path = TeleKomTests;
+			sourceTree = "<group>";
+		};
+		FF70D729291CE6990085119A /* TeleKomUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF70D72A291CE6990085119A /* TeleKomUITests.swift */,
+				FF70D72C291CE6990085119A /* TeleKomUITestsLaunchTests.swift */,
+			);
+			path = TeleKomUITests;
+			sourceTree = "<group>";
+		};
+		FF70D739291CE6C70085119A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FF70D74C291D04BF0085119A /* Favourite */,
+				FF70D749291CF8ED0085119A /* Product */,
+				FF70D744291CF3D60085119A /* Network */,
+				FF70D73A291CE6CD0085119A /* Local */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FF70D73A291CE6CD0085119A /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				FF70D73B291CE6D70085119A /* DatabaseManager.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		FF70D73F291CEB730085119A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF70D740291CEB7F0085119A /* WrapperModel.swift */,
+				FF70D742291CEBA40085119A /* ProductModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF70D744291CF3D60085119A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FF70D745291CF3E40085119A /* NetworkManager.swift */,
+				FF70D747291CF3EF0085119A /* NetworkConstant.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FF70D749291CF8ED0085119A /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				FF70D74A291CF8F80085119A /* ProductService.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		FF70D74C291D04BF0085119A /* Favourite */ = {
+			isa = PBXGroup;
+			children = (
+				FF70D73D291CE9F30085119A /* FavouriteService.swift */,
+			);
+			path = Favourite;
+			sourceTree = "<group>";
+		};
+		FF70D74D291D04EC0085119A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				FF3B1887291D2762004F42C5 /* Detail */,
+				FF70D752291D054B0085119A /* Favourite */,
+				FF70D751291D053B0085119A /* TabBar */,
+				FF70D74E291D04F20085119A /* Home */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		FF70D74E291D04F20085119A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FF3B1884291D25B8004F42C5 /* Cell */,
+				FF70D74F291D05000085119A /* HomeViewController.swift */,
+				FF70D753291D055B0085119A /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FF70D751291D053B0085119A /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				FF3B1896291D5B2F004F42C5 /* TabBarViewController.swift */,
+				FF3B1898291D5B38004F42C5 /* TabBarConstant.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		FF70D752291D054B0085119A /* Favourite */ = {
+			isa = PBXGroup;
+			children = (
+				FF3B1890291D55AC004F42C5 /* FavouriteViewController.swift */,
+				FF3B1892291D55DF004F42C5 /* FavouriteViewModel.swift */,
+			);
+			path = Favourite;
+			sourceTree = "<group>";
+		};
+		FF70D755291D05910085119A /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				FF70D756291D059B0085119A /* ViewModel.swift */,
+				FF3B1882291D2544004F42C5 /* SwiftUITBVC.swift */,
+				FF3B189A291D65E2004F42C5 /* HexToUIColor.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		FF70D758291D09880085119A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				FF70D759291D098F0085119A /* Home */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		FF70D759291D098F0085119A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FF70D75A291D09940085119A /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				FF70D75B291D09B90085119A /* ProductServiceMock.swift */,
+				FF70D75D291D0A350085119A /* NetworkServiceMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF70D705291CE6950085119A /* TeleKom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF70D730291CE6990085119A /* Build configuration list for PBXNativeTarget "TeleKom" */;
+			buildPhases = (
+				FF70D702291CE6950085119A /* Sources */,
+				FF70D703291CE6950085119A /* Frameworks */,
+				FF70D704291CE6950085119A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TeleKom;
+			productName = TeleKom;
+			productReference = FF70D706291CE6950085119A /* TeleKom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF70D71B291CE6990085119A /* TeleKomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF70D733291CE6990085119A /* Build configuration list for PBXNativeTarget "TeleKomTests" */;
+			buildPhases = (
+				FF70D718291CE6990085119A /* Sources */,
+				FF70D719291CE6990085119A /* Frameworks */,
+				FF70D71A291CE6990085119A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF70D71E291CE6990085119A /* PBXTargetDependency */,
+			);
+			name = TeleKomTests;
+			productName = TeleKomTests;
+			productReference = FF70D71C291CE6990085119A /* TeleKomTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF70D725291CE6990085119A /* TeleKomUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF70D736291CE6990085119A /* Build configuration list for PBXNativeTarget "TeleKomUITests" */;
+			buildPhases = (
+				FF70D722291CE6990085119A /* Sources */,
+				FF70D723291CE6990085119A /* Frameworks */,
+				FF70D724291CE6990085119A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF70D728291CE6990085119A /* PBXTargetDependency */,
+			);
+			name = TeleKomUITests;
+			productName = TeleKomUITests;
+			productReference = FF70D726291CE6990085119A /* TeleKomUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF70D6FE291CE6950085119A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					FF70D705291CE6950085119A = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					FF70D71B291CE6990085119A = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = FF70D705291CE6950085119A;
+					};
+					FF70D725291CE6990085119A = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = FF70D705291CE6950085119A;
+					};
+				};
+			};
+			buildConfigurationList = FF70D701291CE6950085119A /* Build configuration list for PBXProject "TeleKom" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF70D6FD291CE6950085119A;
+			productRefGroup = FF70D707291CE6950085119A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF70D705291CE6950085119A /* TeleKom */,
+				FF70D71B291CE6990085119A /* TeleKomTests */,
+				FF70D725291CE6990085119A /* TeleKomUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF70D704291CE6950085119A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF70D716291CE6990085119A /* LaunchScreen.storyboard in Resources */,
+				FF70D713291CE6990085119A /* Assets.xcassets in Resources */,
+				FF70D711291CE6950085119A /* Main.storyboard in Resources */,
+				FF3B188B291D2788004F42C5 /* DetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF70D71A291CE6990085119A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF70D724291CE6990085119A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF70D702291CE6950085119A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF70D70E291CE6950085119A /* ViewController.swift in Sources */,
+				FF3B188F291D3A88004F42C5 /* DetailView.swift in Sources */,
+				FF3B189B291D65E2004F42C5 /* HexToUIColor.swift in Sources */,
+				FF3B1897291D5B2F004F42C5 /* TabBarViewController.swift in Sources */,
+				FF3B188A291D2788004F42C5 /* DetailViewController.swift in Sources */,
+				FF3B1886291D25C8004F42C5 /* HomeTBVC.swift in Sources */,
+				FF70D70A291CE6950085119A /* AppDelegate.swift in Sources */,
+				FF70D73E291CE9F30085119A /* FavouriteService.swift in Sources */,
+				FF70D73C291CE6D70085119A /* DatabaseManager.swift in Sources */,
+				FF70D746291CF3E40085119A /* NetworkManager.swift in Sources */,
+				FF70D70C291CE6950085119A /* SceneDelegate.swift in Sources */,
+				FF3B1881291D2290004F42C5 /* Coordinator.swift in Sources */,
+				FF70D757291D059B0085119A /* ViewModel.swift in Sources */,
+				FF70D743291CEBA40085119A /* ProductModel.swift in Sources */,
+				FF70D754291D055B0085119A /* HomeViewModel.swift in Sources */,
+				FF70D750291D05000085119A /* HomeViewController.swift in Sources */,
+				FF70D748291CF3EF0085119A /* NetworkConstant.swift in Sources */,
+				FF70D741291CEB7F0085119A /* WrapperModel.swift in Sources */,
+				FF3B1895291D5774004F42C5 /* DetailViewModel.swift in Sources */,
+				FF3B1893291D55DF004F42C5 /* FavouriteViewModel.swift in Sources */,
+				FF3B1891291D55AC004F42C5 /* FavouriteViewController.swift in Sources */,
+				FF70D74B291CF8F80085119A /* ProductService.swift in Sources */,
+				FF3B1883291D2544004F42C5 /* SwiftUITBVC.swift in Sources */,
+				FF3B1899291D5B38004F42C5 /* TabBarConstant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF70D718291CE6990085119A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF70D721291CE6990085119A /* TeleKomTests.swift in Sources */,
+				FF70D75C291D09B90085119A /* ProductServiceMock.swift in Sources */,
+				FF70D75E291D0A350085119A /* NetworkServiceMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF70D722291CE6990085119A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF70D72D291CE6990085119A /* TeleKomUITestsLaunchTests.swift in Sources */,
+				FF70D72B291CE6990085119A /* TeleKomUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF70D71E291CE6990085119A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF70D705291CE6950085119A /* TeleKom */;
+			targetProxy = FF70D71D291CE6990085119A /* PBXContainerItemProxy */;
+		};
+		FF70D728291CE6990085119A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF70D705291CE6950085119A /* TeleKom */;
+			targetProxy = FF70D727291CE6990085119A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF70D70F291CE6950085119A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF70D710291CE6950085119A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF70D714291CE6990085119A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF70D715291CE6990085119A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF70D72E291CE6990085119A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF70D72F291CE6990085119A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF70D731291CE6990085119A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BLGCGGKJB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TeleKom/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suitmedia.test.TeleKom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF70D732291CE6990085119A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BLGCGGKJB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TeleKom/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suitmedia.test.TeleKom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF70D734291CE6990085119A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BLGCGGKJB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suitmedia.test.TeleKomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TeleKom.app/TeleKom";
+			};
+			name = Debug;
+		};
+		FF70D735291CE6990085119A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BLGCGGKJB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suitmedia.test.TeleKomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TeleKom.app/TeleKom";
+			};
+			name = Release;
+		};
+		FF70D737291CE6990085119A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BLGCGGKJB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suitmedia.test.TeleKomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TeleKom;
+			};
+			name = Debug;
+		};
+		FF70D738291CE6990085119A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BLGCGGKJB5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suitmedia.test.TeleKomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TeleKom;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF70D701291CE6950085119A /* Build configuration list for PBXProject "TeleKom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF70D72E291CE6990085119A /* Debug */,
+				FF70D72F291CE6990085119A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF70D730291CE6990085119A /* Build configuration list for PBXNativeTarget "TeleKom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF70D731291CE6990085119A /* Debug */,
+				FF70D732291CE6990085119A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF70D733291CE6990085119A /* Build configuration list for PBXNativeTarget "TeleKomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF70D734291CE6990085119A /* Debug */,
+				FF70D735291CE6990085119A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF70D736291CE6990085119A /* Build configuration list for PBXNativeTarget "TeleKomUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF70D737291CE6990085119A /* Debug */,
+				FF70D738291CE6990085119A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF70D6FE291CE6950085119A /* Project object */;
+}
