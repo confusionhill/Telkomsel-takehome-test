@@ -38,6 +38,10 @@
 		FF70D757291D059B0085119A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D756291D059B0085119A /* ViewModel.swift */; };
 		FF70D75C291D09B90085119A /* ProductServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D75B291D09B90085119A /* ProductServiceMock.swift */; };
 		FF70D75E291D0A350085119A /* NetworkServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D75D291D0A350085119A /* NetworkServiceMock.swift */; };
+		FFA2ACEC291E456900A01BF7 /* HomeViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2ACEB291E456900A01BF7 /* HomeViewControllerMock.swift */; };
+		FFA2ACEE291E45DA00A01BF7 /* HomeViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2ACED291E45DA00A01BF7 /* HomeViewModelMock.swift */; };
+		FFA2ACF0291E464200A01BF7 /* TestHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2ACEF291E464100A01BF7 /* TestHomeViewModel.swift */; };
+		FFA2ACF2291E473500A01BF7 /* TestHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2ACF1291E473500A01BF7 /* TestHomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +97,10 @@
 		FF70D756291D059B0085119A /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		FF70D75B291D09B90085119A /* ProductServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductServiceMock.swift; sourceTree = "<group>"; };
 		FF70D75D291D0A350085119A /* NetworkServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceMock.swift; sourceTree = "<group>"; };
+		FFA2ACEB291E456900A01BF7 /* HomeViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerMock.swift; sourceTree = "<group>"; };
+		FFA2ACED291E45DA00A01BF7 /* HomeViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelMock.swift; sourceTree = "<group>"; };
+		FFA2ACEF291E464100A01BF7 /* TestHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHomeViewModel.swift; sourceTree = "<group>"; };
+		FFA2ACF1291E473500A01BF7 /* TestHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -316,6 +324,8 @@
 		FF70D759291D098F0085119A /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				FFA2ACEA291E455300A01BF7 /* Mock */,
+				FFA2ACEF291E464100A01BF7 /* TestHomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -327,6 +337,16 @@
 				FF70D75D291D0A350085119A /* NetworkServiceMock.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		FFA2ACEA291E455300A01BF7 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				FFA2ACEB291E456900A01BF7 /* HomeViewControllerMock.swift */,
+				FFA2ACED291E45DA00A01BF7 /* HomeViewModelMock.swift */,
+				FFA2ACF1291E473500A01BF7 /* TestHomeViewController.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -490,8 +510,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFA2ACF0291E464200A01BF7 /* TestHomeViewModel.swift in Sources */,
 				FF70D721291CE6990085119A /* TeleKomTests.swift in Sources */,
+				FFA2ACEE291E45DA00A01BF7 /* HomeViewModelMock.swift in Sources */,
+				FFA2ACEC291E456900A01BF7 /* HomeViewControllerMock.swift in Sources */,
 				FF70D75C291D09B90085119A /* ProductServiceMock.swift in Sources */,
+				FFA2ACF2291E473500A01BF7 /* TestHomeViewController.swift in Sources */,
 				FF70D75E291D0A350085119A /* NetworkServiceMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
